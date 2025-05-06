@@ -1,0 +1,24 @@
+
+g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çŸø‚ê2
+z
+java:S1488#"]Immediately return this expression instead of assigning it to the temporary variable "token".(Üÿß©8²êù‚ê2
+e
+java:S35188"CMake sure this expression can't be zero before doing this division.(ÚÈŸ‡ÿÿÿÿÿ8Ô ø‚ê2
+]	java:S125	"<This block of commented-out lines of code should be removed.(³ã¸öùÿÿÿÿ8ûÊ‚ƒê2
+X	java:S125"<This block of commented-out lines of code should be removed.(à´«Ñ8Ûöˆƒê2
+X	java:S125"<This block of commented-out lines of code should be removed.(¬·±ƒ8£¦ù‚ê2
+]	java:S125%"<This block of commented-out lines of code should be removed.(ñéâøşÿÿÿÿ8Ñêù‚ê2
+{
+java:S2142/"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ó ø‚ê2
+W
+java:S18548"5Remove this useless assignment to local variable "i".(ÚÈŸ‡ÿÿÿÿÿ8ƒ¡ø‚ê2
+H
+java:S14818"&Remove this unused "i" local variable.(ÚÈŸ‡ÿÿÿÿÿ8’¡ø‚ê2
+[
+java:S3400E"9Remove this method and declare a constant for this value.(ßâ°šûÿÿÿÿ8’¡ø‚ê2
+S
+java:S1172C"6Remove these unused method parameters "p1", "p2", "e".(ËŒÃ®8¢¡ø‚ê2
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ªË‚ƒê2
+l
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8êöˆƒê2
