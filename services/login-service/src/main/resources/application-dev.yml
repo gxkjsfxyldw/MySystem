@@ -2,7 +2,10 @@ spring:
   application:
     name: login-service
   config:
-    import: nacos:login-service-dev.yml
+    import: nacos:application-dev.yml
+#    #  指定对应的yml配置文件.
+#    profiles:
+#      active: nacos:application-dev.yml
   cloud:
     nacos:
       discovery:
@@ -11,3 +14,4 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yml
+
