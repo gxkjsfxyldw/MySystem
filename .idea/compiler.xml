@@ -8,7 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="login-service" />
+        <module name="config-service" />
         <module name="common-module" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
   </component>
