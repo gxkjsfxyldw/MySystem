@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/login-service-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/utils/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/HeaderOriginParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/LoginContrller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/user-service-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="网关基础服务工程搭建" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -90,6 +79,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\MySystem\services\login-service\src\main" />
     </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="RunManager">
     <configuration name="LoginServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -147,8 +142,35 @@
       <workItem from="1751206309737" duration="114000" />
       <workItem from="1751206441736" duration="26000" />
       <workItem from="1751206487100" duration="2264000" />
-      <workItem from="1751210946638" duration="298000" />
+      <workItem from="1751210946638" duration="717000" />
+      <workItem from="1751214238598" duration="876000" />
+      <workItem from="1751292586581" duration="422000" />
+      <workItem from="1751293321255" duration="1277000" />
+      <workItem from="1751299742124" duration="594000" />
+      <workItem from="1751367354676" duration="322000" />
     </task>
+    <task id="LOCAL-00001" summary="项目工程搭建">
+      <created>1751211321773</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751211321773</updated>
+    </task>
+    <task id="LOCAL-00002" summary="配置文件基础服务工程搭建">
+      <created>1751211470673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751211470673</updated>
+    </task>
+    <task id="LOCAL-00003" summary="网关基础服务工程搭建">
+      <created>1751211526141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751211526141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +198,28 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目工程搭建" />
+    <MESSAGE value="配置文件基础服务工程搭建" />
+    <MESSAGE value="网关基础服务工程搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="网关基础服务工程搭建" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
