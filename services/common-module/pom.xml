@@ -66,7 +66,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.common.module.CommonModuleApplication</mainClass>
+                    <mainClass>com.common.CommonModuleApplication</mainClass>
                     <!-- 如果不需要打包可执行JAR，保留skip -->
                     <skip>true</skip>
                 </configuration>
