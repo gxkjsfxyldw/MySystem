@@ -16,15 +16,16 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
         <!-- 降级 Spring Boot 到 2.3.12 (最后一个支持 Java 8 的主要版本) -->
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
-
         <!-- 使用兼容 Java 8 的 Spring Cloud Alibaba 版本 -->
         <spring-cloud-alibaba.version>2.2.10</spring-cloud-alibaba.version>
-
-        <!-- 使用 Spring Cloud Hoxton (兼容 Java 8) -->
+        <!-- 添加 Spring Cloud 版本 -->
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <!-- 添加 MySQL 驱动版本 -->
+        <mysql.version>8.0.30</mysql.version>
+        <!-- 添加 Lombok 版本 -->
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <!-- 打包方式保持不变 -->
@@ -50,7 +51,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Spring Cloud Hoxton.SR12 (兼容 Java 8) -->
+            <!-- Spring Cloud Hoxton (兼容 Java 8) -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -68,13 +69,6 @@
                 <scope>import</scope>
             </dependency>
 
-<!--          该依赖可提供在nacos注册中心界面上修改配置文件功能-->
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
-<!--                <version>${spring-cloud-alibaba.version}</version>-->
-<!--            </dependency>-->
-
             <!-- Spring Cloud Hoxton.SR12 已经包含 OpenFeign 2.2.x -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -84,16 +78,20 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- 添加 MySQL 驱动版本管理 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!-- lombok  -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <!-- 示例：所有子模块共用的依赖 -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 </project>
