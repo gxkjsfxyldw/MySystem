@@ -17,21 +17,22 @@ import org.springframework.util.StringUtils;
 
 /**
  * JWT工具类，提供生成、验证和管理JWT令牌的功能
+ * @author ldw by 20250701
  */
 @Component
 public class JwtUtil {
-    
+
     // 从配置文件中注入密钥和过期时间
     @Value("${jwt.secret}")
     private String secret;
-    
+
     @Value("${jwt.expiration}")
     private long expiration;
-    
+
     // 刷新Token的提前时间（默认15分钟）
     @Value("${jwt.refresh-expiration}")
     private long refreshExpiration = 1000 * 60 * 15;
-    
+
     /**
      * 生成JWT令牌
      * @param userId 用户ID
@@ -61,7 +62,7 @@ public class JwtUtil {
             .withClaim("userId", userId)
             .withExpiresAt(new Date(System.currentTimeMillis() + expiration))
             .withIssuedAt(new Date(System.currentTimeMillis()));
-            
+
         claims.forEach((key, value) -> {
             if (value instanceof String) {
                 finalJwtBuilder.withClaim(key, (String) value);
@@ -94,12 +95,12 @@ public class JwtUtil {
 
         try {
             DecodedJWT decodedJWT = verifier.verify(token);
-            
+
             // 可选：验证Token的有效期
             if (decodedJWT.getExpiresAt().before(new Date())) {
                 return false;
             }
-            
+
             return true;
         } catch (Exception e) {
             // Token验证失败
@@ -119,10 +120,10 @@ public class JwtUtil {
 
         DecodedJWT decodedJWT = JWT.decode(token);
         Claim userClaim = decodedJWT.getClaim("userId");
-        
+
         return userClaim.isNull() ? null : userClaim.asString();
     }
-    
+
     /**
      * 获取Token中的指定声明
      * @param token JWT令牌
@@ -136,10 +137,10 @@ public class JwtUtil {
 
         DecodedJWT decodedJWT = JWT.decode(token);
         Claim claim = decodedJWT.getClaim(claimKey);
-        
+
         return claim.isNull() ? null : claim.asString();
     }
-    
+
     /**
      * 获取Token的剩余有效期
      * @param token JWT令牌
@@ -152,10 +153,10 @@ public class JwtUtil {
 
         DecodedJWT decodedJWT = JWT.decode(token);
         Date expiresAt = decodedJWT.getExpiresAt();
-        
+
         return expiresAt.getTime() - System.currentTimeMillis();
     }
-    
+
     /**
      * 检查是否需要刷新Token
      * @param token JWT令牌
@@ -165,7 +166,7 @@ public class JwtUtil {
         long remainingValidity = getTokenRemainingValidity(token);
         return remainingValidity > 0 && remainingValidity < refreshExpiration;
     }
-    
+
     /**
      * 刷新JWT令牌
      * @param oldToken 旧Token
@@ -178,7 +179,7 @@ public class JwtUtil {
 
         // 解析旧Token中的用户信息
         String userId = getUserIdFromToken(oldToken);
-        
+
         // 生成新Token
         return generateToken(userId);
     }

@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 
 /**
  * 用户基础信息表
+ * @author ldw by 20250701
  */
 @Data
 @Entity
@@ -26,6 +27,7 @@ import java.time.LocalDateTime;
 @TableName(value = "User")
 public class User {
 
+    @Id
     @TableId(value = "id", type = IdType.AUTO)
     @Column(name = "user_id", nullable = false, updatable = false, columnDefinition = "BIGINT COMMENT '用户ID，主键自增'")
     private Long userId;
