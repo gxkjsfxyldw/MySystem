@@ -26,12 +26,14 @@
         <mysql.version>8.0.30</mysql.version>
         <!-- 添加 Lombok 版本 -->
         <lombok.version>1.18.30</lombok.version>
+        <!-- 添加 MyBatis Plus 版本 -->
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
     </properties>
 
     <!-- 打包方式保持不变 -->
     <packaging>pom</packaging>
 
-    <!-- 子模块保持不变 -->
+    <!-- 项目模块和依赖管理 -->
     <modules>
         <module>common-module</module>
         <module>login-service</module>
@@ -76,6 +78,14 @@
                 <version>Hoxton.SR12</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- 添加 MyBatis Plus 版本管理 -->
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
 
             <!-- 添加 MySQL 驱动版本管理 -->

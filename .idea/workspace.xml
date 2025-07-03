@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="网关服务配置">
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="添加mysql数据库数据源配置">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_03__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev.yml" afterDir="false" />
@@ -55,11 +55,11 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="customMavenHome" value="D:/maven/apache-maven-3.6.3" />
-        <option name="localRepository" value="D:\maven\apache-maven-3.6.3\repository" />
+        <option name="customMavenHome" value="D:\Maven\apache-maven-3.9.8" />
+        <option name="localRepository" value="D:\maven\apache-maven-3.9.8\repository" />
         <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
         <option name="showDialogWithAdvancedSettings" value="true" />
-        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.9.8\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -75,19 +75,23 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "mysql-explain.enableMySQLExplain": "true",
+    "mysql-explain.existMysqlJar": "true",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\MySystem\services\login-service\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\demo\services\login-service\src\main\java\com\ldw\loginservice\dao\pojo" />
       <recent name="E:\MySystem\services\login-service\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -171,7 +175,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751354843493</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加mysql依赖，优化pom依赖的版本控制">
+      <option name="closed" value="true" />
+      <created>1751427189273</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751427189273</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加mysql数据库数据源配置">
+      <option name="closed" value="true" />
+      <created>1751427226162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751427226162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +224,9 @@
     <MESSAGE value="数据库文件" />
     <MESSAGE value="网关服务配置" />
     <MESSAGE value="文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件" />
+    <MESSAGE value="添加mysql依赖，优化pom依赖的版本控制" />
+    <MESSAGE value="添加mysql数据库数据源配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加mysql数据库数据源配置" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

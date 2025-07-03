@@ -36,6 +36,19 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <!-- MyBatis Plus Starter -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+        <!-- lombok  -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- 其他已有依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -104,7 +117,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.ldw.loginservice.LoginServiceApplication</mainClass>
+                    <mainClass>com.ldw.LoginServiceApplication</mainClass>
                     <!-- 如果不需要打包可执行JAR，可保留 skip -->
                     <skip>true</skip>
                 </configuration>

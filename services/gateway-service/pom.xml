@@ -169,7 +169,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.ldw.loginservice.LoginServiceApplication</mainClass>
+                    <mainClass>com.ldw.LoginServiceApplication</mainClass>
                     <!-- 排除 lombok 依赖 -->
                     <excludes>
                         <exclude>
