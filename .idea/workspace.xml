@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="添加以下">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="添加一下作者信息">
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/utils/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/LoginServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/LoginServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,9 +57,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\maven\apache-maven-3.9.8\repository" />
+        <option name="localRepository" value="D:\maven\apache-maven-3.6.3\repository" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
         <option name="showDialogWithAdvancedSettings" value="true" />
-        <option name="userSettingsFile" value="D:\maven\apache-maven-3.9.8\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -74,12 +74,21 @@
     <option name="showModules" value="false" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="mysql-explain.agentPath" value="C:\Users\26327\AppData\Roaming\JetBrains\IntelliJIdea2021.2\plugins\mysql-explain-intellij-plugin\lib\mysql-explain-agent-1.0-jar-with-dependencies.jar" />
     <property name="mysql-explain.existMysqlJar" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -92,6 +101,20 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.common" />
     </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="login-service" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="RunManager" selected="Spring Boot.LoginServiceApplication (1)">
     <configuration name="LoginServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -163,6 +186,10 @@
       <workItem from="1751206441736" duration="26000" />
       <workItem from="1751206487100" duration="2264000" />
       <workItem from="1751210946638" duration="298000" />
+      <workItem from="1751644288459" duration="2436000" />
+      <workItem from="1751647354407" duration="279000" />
+      <workItem from="1751647680978" duration="508000" />
+      <workItem from="1751648237309" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="数据库文件">
       <option name="closed" value="true" />
@@ -204,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1751427226162</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加一下作者信息">
+      <created>1751562598085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751562598085</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +274,8 @@
     <MESSAGE value="文件" />
     <MESSAGE value="添加mysql依赖，优化pom依赖的版本控制" />
     <MESSAGE value="添加mysql数据库数据源配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加mysql数据库数据源配置" />
+    <MESSAGE value="添加一下作者信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加一下作者信息" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

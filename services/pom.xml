@@ -28,6 +28,8 @@
         <lombok.version>1.18.30</lombok.version>
         <!-- 添加 MyBatis Plus 版本 -->
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <!-- 添加 Swagger 版本 -->
+        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <!-- 打包方式保持不变 -->
@@ -49,59 +51,65 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
-                <type>pom</type>
                 <scope>import</scope>
+                <type>pom</type>
             </dependency>
-
-            <!-- Spring Cloud Hoxton (兼容 Java 8) -->
+            <!-- Spring Cloud 2021.x 依赖管理 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
-                <type>pom</type>
                 <scope>import</scope>
+                <type>pom</type>
             </dependency>
-
-            <!-- Spring Cloud Alibaba 2.2.10.RELEASE (兼容 Java 8) -->
+            <!-- Spring Cloud Alibaba 2021.x 依赖管理 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>
-                <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- Spring Cloud Hoxton.SR12 已经包含 OpenFeign 2.2.x -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Hoxton.SR12</version>
                 <type>pom</type>
-                <scope>import</scope>
             </dependency>
-
-            <!-- 添加 MyBatis Plus 版本管理 -->
-            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
-
-            <!-- 添加 MySQL 驱动版本管理 -->
+            <!-- MySQL 驱动依赖管理 -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
-
-            <!-- lombok  -->
+            <!-- Lombok 依赖管理 -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- MyBatis Plus 依赖管理 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- swagger 依赖管理 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.12.RELEASE</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
