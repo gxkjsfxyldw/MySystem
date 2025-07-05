@@ -7,7 +7,6 @@
     <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="添加一下作者信息">
       <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
     </list>
@@ -189,7 +188,8 @@
       <workItem from="1751644288459" duration="2436000" />
       <workItem from="1751647354407" duration="279000" />
       <workItem from="1751647680978" duration="508000" />
-      <workItem from="1751648237309" duration="782000" />
+      <workItem from="1751648237309" duration="1106000" />
+      <workItem from="1751687927017" duration="2928000" />
     </task>
     <task id="LOCAL-00001" summary="数据库文件">
       <option name="closed" value="true" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1751562598085</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="优化依赖，新增swagger接口管理依赖2.9.2版本">
+      <created>1751649287823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751649287823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +282,8 @@
     <MESSAGE value="添加mysql依赖，优化pom依赖的版本控制" />
     <MESSAGE value="添加mysql数据库数据源配置" />
     <MESSAGE value="添加一下作者信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加一下作者信息" />
+    <MESSAGE value="优化依赖，新增swagger接口管理依赖2.9.2版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化依赖，新增swagger接口管理依赖2.9.2版本" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

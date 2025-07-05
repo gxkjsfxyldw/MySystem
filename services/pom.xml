@@ -18,18 +18,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- 降级 Spring Boot 到 2.3.12 (最后一个支持 Java 8 的主要版本) -->
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
-        <!-- 使用兼容 Java 8 的 Spring Cloud Alibaba 版本 -->
         <spring-cloud-alibaba.version>2.2.10</spring-cloud-alibaba.version>
-        <!-- 添加 Spring Cloud 版本 -->
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-        <!-- 添加 MySQL 驱动版本 -->
         <mysql.version>8.0.30</mysql.version>
-        <!-- 添加 Lombok 版本 -->
         <lombok.version>1.18.30</lombok.version>
-        <!-- 添加 MyBatis Plus 版本 -->
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
-        <!-- 添加 Swagger 版本 -->
         <swagger.version>2.9.2</swagger.version>
+        <log4j2.version>2.7.9</log4j2.version>
     </properties>
 
     <!-- 打包方式保持不变 -->
@@ -46,13 +41,19 @@
     <!-- 依赖管理 -->
     <dependencyManagement>
         <dependencies>
-            <!-- Spring Boot 2.7.x 依赖管理 -->
+            <!-- Spring Boot 2.7.x 依赖管理 并排除默认日志 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <!-- 添加 Log4j2 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-log4j2</artifactId>
+                <version>${log4j2.version}</version>
             </dependency>
             <!-- Spring Cloud 2021.x 依赖管理 -->
             <dependency>
