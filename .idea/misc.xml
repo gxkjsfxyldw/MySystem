@@ -10,7 +10,6 @@
         <option value="$PROJECT_DIR$/services/common-module/pom.xml" />
         <option value="$PROJECT_DIR$/services/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/services/gateway-service/pom.xml" />
-        <option value="$PROJECT_DIR$/services/config-service/pom.xml" />
       </list>
     </option>
   </component>

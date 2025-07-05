@@ -1,4 +1,4 @@
-package com.ldw.gatewayservice;
+package com.ldw;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -45,6 +45,10 @@
             <artifactId>java-jwt</artifactId>
             <version>${jwt.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -66,7 +70,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.common.CommonModuleApplication</mainClass>
+                    <mainClass>com.CommonModuleApplication</mainClass>
                     <!-- 如果不需要打包可执行JAR，保留skip -->
                     <skip>true</skip>
                 </configuration>

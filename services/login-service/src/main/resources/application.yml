@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: login-service
+  config:
+    import: nacos:application-dev-loginser.yml
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8801
+      config:
+        server-addr: localhost:8801
+        file-extension: yml

@@ -23,6 +23,7 @@
         <mysql.version>8.0.30</mysql.version>
         <lombok.version>1.18.30</lombok.version>
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <mybatis-plus-extension.version>3.3.2</mybatis-plus-extension.version>
         <swagger.version>2.9.2</swagger.version>
         <log4j2.version>2.7.9</log4j2.version>
     </properties>
@@ -34,7 +35,6 @@
     <modules>
         <module>common-module</module>
         <module>login-service</module>
-        <module>config-service</module>
         <module>gateway-service</module>
     </modules>
 
@@ -89,6 +89,11 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus-extension.version}</version>
             </dependency>
             <!-- swagger 依赖管理 -->
             <dependency>

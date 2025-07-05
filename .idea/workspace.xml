@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="添加一下作者信息">
+      <change afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/constant/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/MybatisPlusConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/impl/AuthServiceIpml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/common-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/CommonModuleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/CommonModuleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-service/src/main/java/com/ldw/configservice/ConfigServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-service/src/test/java/com/ldw/configservice/ConfigServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/GatewayServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/resources/gateway-service-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/main/resources/application-dev-gatewayser.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/login-service-dev.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +107,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -98,6 +120,9 @@
       <recent name="E:\MySystem\services\login-service\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
+      <recent name="com.ldw" />
+      <recent name="com.ldw.configservice" />
       <recent name="com.common" />
     </key>
   </component>
@@ -189,7 +214,16 @@
       <workItem from="1751647354407" duration="279000" />
       <workItem from="1751647680978" duration="508000" />
       <workItem from="1751648237309" duration="1106000" />
-      <workItem from="1751687927017" duration="2928000" />
+      <workItem from="1751687927017" duration="5226000" />
+      <workItem from="1751700724694" duration="551000" />
+      <workItem from="1751701679409" duration="48000" />
+      <workItem from="1751701757410" duration="455000" />
+      <workItem from="1751702228073" duration="87000" />
+      <workItem from="1751702362896" duration="444000" />
+      <workItem from="1751702834913" duration="541000" />
+      <workItem from="1751704275509" duration="737000" />
+      <workItem from="1751705066874" duration="1235000" />
+      <workItem from="1751706413290" duration="5435000" />
     </task>
     <task id="LOCAL-00001" summary="数据库文件">
       <option name="closed" value="true" />
@@ -245,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1751649287823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="优化依赖管理，并添加log4j2依赖">
+      <created>1751698398293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751698398293</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +324,8 @@
     <MESSAGE value="添加mysql数据库数据源配置" />
     <MESSAGE value="添加一下作者信息" />
     <MESSAGE value="优化依赖，新增swagger接口管理依赖2.9.2版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化依赖，新增swagger接口管理依赖2.9.2版本" />
+    <MESSAGE value="优化依赖管理，并添加log4j2依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化依赖管理，并添加log4j2依赖" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

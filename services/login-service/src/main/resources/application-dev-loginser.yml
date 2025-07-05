@@ -1,19 +1,6 @@
+server:
+  port: 9901
 spring:
-  application:
-    name: login-service
-  config:
-    import: nacos:application-dev.yml
-#    #  指定对应的yml配置文件.
-#    profiles:
-#      active: nacos:application-dev.yml
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-#        注册中心配置文件
-      config:
-        server-addr: localhost:8848
-        file-extension: yml
   #数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

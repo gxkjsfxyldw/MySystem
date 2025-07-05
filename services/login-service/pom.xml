@@ -42,12 +42,15 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!-- MyBatis Plus Starter -->
+        <!-- MyBatis Plus -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+        </dependency>
         <!-- lombok  -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -66,15 +69,16 @@
 <!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
 <!--        </dependency>-->
 
-        <!-- Nacos 服务发现与配置中心（版本由父POM管理） -->
+        <!-- Spring Cloud Config Client -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <!-- Nacos 服务发现 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <!--          该依赖可提供在nacos注册中心界面上修改配置文件功能-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
         <!-- Sentinel 流量控制（版本由父POM管理） -->
