@@ -10,10 +10,9 @@
 
     <!-- 继承父POM的统一版本管理 -->
     <parent>
-        <groupId>com.services</groupId>
+        <groupId>services</groupId>
         <artifactId>services</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- 从本地仓库查找父POM -->
     </parent>
 
     <properties>
@@ -39,6 +38,10 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <!-- JWT认证库 -->
         <dependency>
             <groupId>com.auth0</groupId>
@@ -59,25 +62,6 @@
                     <target>${java.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
-            </plugin>
-
-            <!-- Spring Boot Maven插件（版本继承父POM） -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.common.module.CommonModuleApplication</mainClass>
-                    <!-- 如果不需要打包可执行JAR，保留skip -->
-                    <skip>true</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>repackage</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
