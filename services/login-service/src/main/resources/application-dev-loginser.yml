@@ -1,6 +1,6 @@
-server:
-  port: 9901
 spring:
+  application:
+    name: login-service
   #数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -29,3 +29,15 @@ spring:
       leak-detection-threshold: 5000
       # 检测连接是否空闲的线程数
       register-mbeans: true
+  cloud:
+    nacos:
+      discovery:
+        # Nacos服务地址，用于服务注册与发现
+        server-addr: localhost:8848
+        #配置中心
+      config:
+        server-addr: localhost:8848
+        #配置的格式 yml
+        file-extension: yml
+        # 从Nacos配置中心导入配置文件
+      import: nacos:application-dev-loginser.yml
