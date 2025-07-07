@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: gateway-service
+  config:
+    import: nacos:application-dev-gatewayser.yml
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8888
+      config:
+        server-addr: localhost:8888
+        file-extension: yml
+#    resilience4j:
+#      circuitbreaker:
+#        instances:
+#          loginServiceCircuitBreaker:
+#            failureRateThreshold: 50  # 熔断器触发阈值，当失败率达到50%时开启熔断
+#            minimumNumberOfCalls: 5  # 统计最小请求数，至少需要5次调用才会触发熔断逻辑
+#          configServiceCircuitBreaker:
+#            failureRateThreshold: 50  # 配置服务熔断器的失败率阈值
+#            minimumNumberOfCalls: 5  # 同上，统计最小请求数为10
+#  webflux:
+#    cors:
+#      mappings:
+#        /api/**:
+#          allowed-origins: "*"  # 允许所有来源访问API接口
+#          allowed-methods: "*"   # 允许所有HTTP方法（GET, POST, PUT, DELETE等）
+#          allowed-headers: "*"  # 允许所有请求头

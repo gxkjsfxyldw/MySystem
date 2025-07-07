@@ -4,42 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/constant/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/common/constant/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/feignClient/LoginServiceFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/compiler.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;services/auth-service/.gitignore&#10;#&#9;services/auth-service/pom.xml&#10;#&#9;services/auth-service/src/main/java/authservice/AuthServiceApplication.java&#10;#&#9;services/auth-service/src/test/java/authservice/AuthServiceApplicationTests.java&#10;#&#9;services/common-module/pom.xml&#10;#&#9;services/common-module/src/main/java/com/CommonModuleApplication.java&#10;#&#9;services/common-module/src/main/java/com/common/CommonModuleApplication.java&#10;#&#9;services/common-module/src/main/java/com/common/module/CommonModuleApplication.java&#10;#&#9;services/common-module/src/main/java/com/common/module/constant/Result.java&#10;#&#9;services/common-module/src/main/java/com/common/module/utils/JwtUtil.java&#10;#&#9;services/gateway-service/pom.xml&#10;#&#9;services/gateway-service/src/main/java/com/ldw/GatewayServiceApplication.java&#10;#&#9;services/login-service/pom.xml&#10;#&#9;services/login-service/src/main/java/com/ldw/loginservice/config/MybatisPlusConfig.java&#10;#&#9;services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java&#10;#&#9;services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java&#10;#&#9;services/login-service/src/main/java/com/ldw/loginservice/feignClient/LoginServiceFeignClient.java&#10;#&#9;services/login-service/src/main/java/com/ldw/loginservice/service/AuthService.java&#10;#&#9;services/login-service/src/main/resources/application.yml&#10;#&#9;services/pom.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_03_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_03__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_08_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_08__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_41_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_41__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_2_22_06_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_2_22_06__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_4_0_46_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_4_0_46__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_7_22_34_[Changes]/mysystem.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysystem.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/plan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/filter/RequestLoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/src/main/resources/application-dev-gatewayser.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/CommonModuleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/CommonModuleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/test/java/com/common/module/CommonModuleApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/test/java/com/common/module/CommonModuleApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-service/src/main/java/com/ldw/configservice/ConfigServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/authservice/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-service/src/test/java/com/ldw/configservice/ConfigServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/test/java/authservice/AuthServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/test/java/com/ldw/gatewayservice/GatewayServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/test/java/com/ldw/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/LoginServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/LoginServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/login-service-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/GatewayServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/resources/gateway-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/LoginServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/LoginServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +107,11 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="main" />
+    </force-push-targets>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\MySystem\services\login-service\src\main\resources" />
@@ -134,7 +136,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoginServiceApplication">
+  <component name="RunManager" selected="Spring Boot.LoginServiceApplication (1)">
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="auth-service" />
       <extension name="coverage">
@@ -144,6 +146,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="login-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ldw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ldw.LoginServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,6 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.LoginServiceApplication (1)" />
         <item itemvalue="Spring Boot.LoginServiceApplication" />
         <item itemvalue="Spring Boot.AuthServiceApplication" />
       </list>
@@ -229,8 +245,16 @@
       <workItem from="1751890124212" duration="3814000" />
       <workItem from="1751894223532" duration="2607000" />
       <workItem from="1751896879148" duration="770000" />
-      <workItem from="1751897743943" duration="700000" />
+      <workItem from="1751897743943" duration="1421000" />
     </task>
+    <task id="LOCAL-00001" summary="革命性改造，login-service服务能启动了QAQ">
+      <created>1751898537534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751898537534</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +283,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="革命性改造，login-service服务能启动了QAQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="革命性改造，login-service服务能启动了QAQ" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

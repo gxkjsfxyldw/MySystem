@@ -1,4 +1,4 @@
-package com.ldw.loginservice;
+package com.ldw;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
