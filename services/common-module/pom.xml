@@ -8,12 +8,12 @@
     <name>common-module</name>
     <description>common-module</description>
 
-    <!-- 继承父POM的统一版本管理 -->
-    <parent>
-        <groupId>services</groupId>
-        <artifactId>services</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+<!--    &lt;!&ndash; 继承父POM的统一版本管理 &ndash;&gt;-->
+<!--    <parent>-->
+<!--        <groupId>services</groupId>-->
+<!--        <artifactId>services</artifactId>-->
+<!--        <version>0.0.1-SNAPSHOT</version>-->
+<!--    </parent>-->
 
     <properties>
         <!-- 与父POM保持一致 -->

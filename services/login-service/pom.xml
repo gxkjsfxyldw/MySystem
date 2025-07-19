@@ -68,20 +68,20 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!--mybatis-plus 依赖-->
+        <!--        mybatis-plus 依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-core</artifactId>
         </dependency>
-<!--        &lt;!&ndash;mybatis-plus 代码生成器依赖&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.baomidou</groupId>-->
-<!--            <artifactId>mybatis-plus-generator</artifactId>-->
-<!--        </dependency>-->
+
         <!-- swagger 依赖管理 -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -101,6 +101,10 @@
             <groupId>com.common.module</groupId>
             <artifactId>common-module</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>

@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="">
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="优化配置文件">
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_08_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_08__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_41_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_41__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_2_22_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_2_22_06__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_4_0_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_4_0_46__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/LoginServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/LoginServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/common-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +233,9 @@
       <workItem from="1751894223532" duration="2607000" />
       <workItem from="1751896879148" duration="770000" />
       <workItem from="1751897743943" duration="4667000" />
+      <workItem from="1751906427862" duration="77000" />
+      <workItem from="1751985922269" duration="820000" />
+      <workItem from="1752941017934" duration="7631000" />
     </task>
     <task id="LOCAL-00001" summary="革命性改造，login-service服务能启动了QAQ">
       <created>1751898537534</created>
@@ -233,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1751899230352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化配置文件">
+      <created>1751906463870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751906463870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +291,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="革命性改造，login-service服务能启动了QAQ" />
     <MESSAGE value="再次更新版本改造内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="再次更新版本改造内容" />
+    <MESSAGE value="优化配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化配置文件" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
