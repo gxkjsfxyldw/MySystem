@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="注册功能实现">
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/common/constant/Enums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/UserService.java" afterDir="false" />
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/AllExceptionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/DataExceptionConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +237,7 @@
       <workItem from="1751906427862" duration="77000" />
       <workItem from="1751985922269" duration="820000" />
       <workItem from="1752941017934" duration="7886000" />
-      <workItem from="1752989084659" duration="17237000" />
+      <workItem from="1752989084659" duration="20928000" />
     </task>
     <task id="LOCAL-00001" summary="革命性改造，login-service服务能启动了QAQ">
       <created>1751898537534</created>
@@ -274,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1752950622380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="注册功能实现基本流程">
+      <created>1753016420646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753016420646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +309,9 @@
     <MESSAGE value="再次更新版本改造内容" />
     <MESSAGE value="优化配置文件" />
     <MESSAGE value="项目，添加了lang3 版本3.12.0和hutool 版本5.8.38" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目，添加了lang3 版本3.12.0和hutool 版本5.8.38" />
+    <MESSAGE value="注册功能实现级别流程" />
+    <MESSAGE value="注册功能实现基本流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册功能实现基本流程" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
