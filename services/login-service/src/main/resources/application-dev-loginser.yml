@@ -41,3 +41,8 @@ spring:
         file-extension: yml
         # 从Nacos配置中心导入配置文件
       import: nacos:application-dev-loginser.yml
+
+#加密盐
+app:
+  security:
+    salt: "ldw!@#"

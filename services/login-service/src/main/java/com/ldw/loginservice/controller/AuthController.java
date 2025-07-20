@@ -35,7 +35,7 @@ public class AuthController {
             return authService.register(user);
         } catch (Exception e) {
             // 统一异常处理
-            return Result.fail(408,"注册信息有误: " + e.getMessage());
+            return Result.fail(408,"用户注册信息有误: " + e.getMessage());
         }
     }
 
