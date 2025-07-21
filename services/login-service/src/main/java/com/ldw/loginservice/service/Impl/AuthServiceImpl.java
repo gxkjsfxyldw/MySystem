@@ -9,6 +9,8 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -25,6 +27,16 @@ public class AuthServiceImpl implements AuthService {
     private UserService userService;
 
 
+
+    /**
+     * 用户注册
+     * @param user
+     * @return
+     * 设置事务传播行为为 REQUIRED，保证方法在事务内执行
+     * propagation: 表示事务传播行为，默认为 Propagation.REQUIRED
+     * timeout: 事务超时时间，默认为 -1（不超时）
+     */
+    @Transactional(propagation = Propagation.REQUIRED, timeout = -1)
     @Override
     public Result register(User user) {
         /**
@@ -66,9 +78,9 @@ public class AuthServiceImpl implements AuthService {
                 .deletedAt(null)
                 .build();
         if( userService.save(newUser)){
-            return Result.success();
+            return Result.success("用户注册成功");
         }
-        return Result.fail(401,"系统故障，注册失败");
+        return Result.fail(408,"用户注册信息有误，注册失败");
     }
 
 
