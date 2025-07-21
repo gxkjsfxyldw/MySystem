@@ -24,7 +24,7 @@ public class User {
     /**
      * 用户ID，主键自增
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "user_id", type = IdType.AUTO)
     private Long userId;
 
     /**
@@ -35,7 +35,7 @@ public class User {
     /**
      * 昵称，唯一
      */
-    private String NickName;
+    private String nickName;
 
     /**
      * 电子邮箱，唯一

@@ -1,7 +1,7 @@
 package com.ldw.loginservice.controller;
 
 import com.ldw.loginservice.common.constant.Result;
-import com.ldw.loginservice.dao.pojo.User;
+import com.ldw.loginservice.dao.vo.NewUserVo;
 import com.ldw.loginservice.service.AuthService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
@@ -29,10 +29,10 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/register")
-    public Result register(@RequestBody User user) {
+    public Result register(@RequestBody NewUserVo newUserVo) {
         // 添加日志记录
         try {
-            return authService.register(user);
+            return authService.register(newUserVo);
         } catch (Exception e) {
             // 统一异常处理
             return Result.fail(408,"用户注册信息有误: " + e.getMessage());

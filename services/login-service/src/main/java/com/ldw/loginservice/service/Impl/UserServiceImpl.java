@@ -17,8 +17,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
+
     @Autowired
     private UserMapper userMapper;
+    @Override
+    public User getUserListByUserIds(Long userIds) {
+        return userMapper.selectOne(new LambdaQueryWrapper<User>().eq(User::getUserId,userIds));
+    }
 
     /**
      * @description: 根据用户名查询用户是否已注册
@@ -42,7 +47,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             }
         } catch (Exception e) {
             // 记录异常日志
-            result = "-1";
+            result = "99";
+            System.out.println("查询用户信息数据库出错！result = "+result);
         }
         return result;
     }

@@ -3,6 +3,7 @@ package com.ldw.loginservice.service.Impl;
 import com.ldw.loginservice.common.constant.Enums;
 import com.ldw.loginservice.common.constant.Result;
 import com.ldw.loginservice.dao.pojo.User;
+import com.ldw.loginservice.dao.vo.NewUserVo;
 import com.ldw.loginservice.service.AuthService;
 import com.ldw.loginservice.service.UserService;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -13,7 +14,6 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 /**
  * @description:
@@ -30,7 +30,7 @@ public class AuthServiceImpl implements AuthService {
 
     /**
      * 用户注册
-     * @param user
+     * @param newUserVo
      * @return
      * 设置事务传播行为为 REQUIRED，保证方法在事务内执行
      * propagation: 表示事务传播行为，默认为 Propagation.REQUIRED
@@ -38,39 +38,43 @@ public class AuthServiceImpl implements AuthService {
      */
     @Transactional(propagation = Propagation.REQUIRED, timeout = -1)
     @Override
-    public Result register(User user) {
+    public Result register(NewUserVo newUserVo) {
         /**
          * 1.判断参数是否合法
          * 2.判断账户是否已存在，存在，则此账户已被注册
          * 3.如果账户不存在，注册用户
          * 4.注意，加上事务，一旦中间的任何过程问题，注册的用户，需要回滚
          */
-        if(StringUtils.isAllBlank(user.getUsername(), user.getPasswordHash(), user.getNickName())) {
+        if(StringUtils.isAllBlank(newUserVo.getUsername(), newUserVo.getPasswordHash(), newUserVo.getNickName())) {
             return Result.fail(Result.CODE_BAD_REQUEST, "(账号，密码，昵称)不能为空");
         }
-        String result = userService.selecetUserByUsername(user.getUsername());
+        String result = userService.selecetUserByUsername(newUserVo.getUsername());
         // 判断用户名是否已存在,存在则
+        System.out.println("1ldw:"+result);
+        System.out.println("2ldw:"+"1".equals(result));
         if(!"1".equals(result)){
-            return Result.fail(Result.CODE_BAD_REQUEST, "(");
+            switch (result) {
+                case "0":
+                    return Result.fail(Result.CODE_BAD_REQUEST, "用户已存在");
+                case "-1":
+                    return Result.fail(Result.CODE_BAD_REQUEST, "用户名为空！");
+                default:
+                    return Result.fail(Result.CODE_BAD_REQUEST, "注册信息参数错误");
+            }
         }
-        // 获取当前日期时间
-        LocalDateTime now = LocalDateTime.now();
-        // 格式化为年月日时分秒
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String formattedDateTime = now.format(formatter);
         User newUser = User.builder()
-                .username(user.getUsername())
-                .NickName(user.getNickName())
-                .email(user.getEmail())
-                .phone(user.getPhone())
-                .passwordHash(DigestUtils.md5Hex(user.getPasswordHash()+ Enums.SALT))
+                .username(newUserVo.getUsername())
+                .nickName(newUserVo.getNickName())
+                .email(newUserVo.getEmail())
+                .phone(newUserVo.getPhone())
+                .passwordHash(DigestUtils.md5Hex(newUserVo.getPasswordHash()+ Enums.SALT))
                 .salt(Enums.SALT)
                 .accountStatus("1")
                 .failedLoginAttempts(0)
-                .lastLoginTime(LocalDateTime.parse(formattedDateTime))
+                .lastLoginTime(LocalDateTime.now())
                 .lastLoginIp("*")
-                .createdAt(LocalDateTime.parse(formattedDateTime))
-                .updatedAt(LocalDateTime.parse(formattedDateTime))
+                .createdAt(LocalDateTime.now())
+                .updatedAt(LocalDateTime.now())
                 .createdBy((long) 1)
                 .updatedBy((long) 1)
                 .isDeleted(false)

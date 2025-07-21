@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/AllExceptionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/DataExceptionConfig.java" afterDir="false" />
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="新增全局异常处理和数据库异常配置类">
+      <change afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/vo/NewUserVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +113,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.LoginServiceApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.LoginServiceApplication (1)">
     <configuration name="LoginServiceApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="login-service" />
       <extension name="coverage">
@@ -165,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginServiceApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.LoginServiceApplication (1)" />
+        <item itemvalue="JUnit.LoginServiceApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.LoginServiceApplication" />
         <item itemvalue="Spring Boot.AuthServiceApplication" />
       </list>
@@ -237,7 +243,9 @@
       <workItem from="1751906427862" duration="77000" />
       <workItem from="1751985922269" duration="820000" />
       <workItem from="1752941017934" duration="7886000" />
-      <workItem from="1752989084659" duration="20928000" />
+      <workItem from="1752989084659" duration="21646000" />
+      <workItem from="1753095619489" duration="9770000" />
+      <workItem from="1753111505928" duration="4635000" />
     </task>
     <task id="LOCAL-00001" summary="革命性改造，login-service服务能启动了QAQ">
       <created>1751898537534</created>
@@ -274,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1753016420646</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增全局异常处理和数据库异常配置类">
+      <created>1753028219012</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753028219012</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +326,8 @@
     <MESSAGE value="项目，添加了lang3 版本3.12.0和hutool 版本5.8.38" />
     <MESSAGE value="注册功能实现级别流程" />
     <MESSAGE value="注册功能实现基本流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册功能实现基本流程" />
+    <MESSAGE value="新增全局异常处理和数据库异常配置类" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增全局异常处理和数据库异常配置类" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
