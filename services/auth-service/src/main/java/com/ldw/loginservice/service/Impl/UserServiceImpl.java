@@ -20,10 +20,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
     @Autowired
     private UserMapper userMapper;
-    @Override
-    public User getUserListByUserIds(Long userIds) {
-        return userMapper.selectOne(new LambdaQueryWrapper<User>().eq(User::getUserId,userIds));
-    }
+
 
     /**
      * @description: 根据用户名查询用户是否已注册
