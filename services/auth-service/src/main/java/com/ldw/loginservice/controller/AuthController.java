@@ -6,10 +6,7 @@ import com.ldw.loginservice.service.AuthService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -27,6 +24,16 @@ public class AuthController {
 
     @Autowired
     private AuthService authService;
+
+    @GetMapping("/login")
+    public Result login(@RequestParam String username, @RequestParam String password){
+        try {
+            return authService.login(username,password);
+        } catch (Exception e) {
+            // 统一异常处理
+            return Result.fail(408,"账号或密码信息有误: " + e.getMessage());
+        }
+    }
 
     @PostMapping("/register")
     public Result register(@RequestBody NewUserVo newUserVo) {

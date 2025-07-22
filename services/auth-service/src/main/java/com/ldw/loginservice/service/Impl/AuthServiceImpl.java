@@ -1,9 +1,12 @@
 package com.ldw.loginservice.service.Impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.ldw.loginservice.common.constant.Enums;
 import com.ldw.loginservice.common.constant.Result;
+import com.ldw.loginservice.dao.mapper.UserMapper;
 import com.ldw.loginservice.dao.pojo.User;
 import com.ldw.loginservice.dao.vo.NewUserVo;
+import com.ldw.loginservice.dao.vo.UserVo;
 import com.ldw.loginservice.service.AuthService;
 import com.ldw.loginservice.service.UserService;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -26,6 +29,8 @@ public class AuthServiceImpl implements AuthService {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private UserMapper userMapper;
 
 
     /**
@@ -87,6 +92,31 @@ public class AuthServiceImpl implements AuthService {
         return Result.fail(408,"用户注册信息有误，注册失败");
     }
 
+    @Override
+    public Result login(String username, String password) {
+        User user = userMapper.selectOne(new LambdaQueryWrapper<User>()
+                .eq(User::getUsername, username)
+                .eq(User::getPasswordHash, DigestUtils.md5Hex(password + Enums.SALT)));
+        if(user != null){
+            UserVo userinfo = UserVo.builder()
+                    .userId(user.getUserId())
+                    .username(user.getUsername())
+                    .nickName(user.getNickName())
+                    .email(user.getEmail())
+                    .phone(user.getPhone())
+                    .accountStatus(user.getAccountStatus())
+                    .failedLoginAttempts(user.getFailedLoginAttempts())
+                    .lastLoginTime(user.getLastLoginTime())
+                    .lastLoginIp(user.getLastLoginIp())
+                    .createdAt(user.getCreatedAt())
+                    .updatedAt(user.getUpdatedAt())
+                    .createdBy(user.getCreatedBy())
+                    .updatedBy(user.getUpdatedBy())
+                    .build();
+            return Result.success(userinfo);
+        }
+        return Result.fail(408,"用户名或密码错误");
+    }
 
 
 }

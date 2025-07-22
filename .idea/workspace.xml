@@ -4,41 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="注册功能实现基本流程">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025_7_1_19_03__Changes_.xml" afterDir="false" />
+    <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="优化项目结构">
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/dao/vo/UserVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/authservice/AuthServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/test/java/authservice/AuthServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/GatewayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/filter/RequestLoggingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/src/main/java/com/ldw/gatewayservice/filter/RequestLoggingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/LoginServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/common/constant/Enums.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/common/constant/Enums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/common/constant/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/common/constant/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/AllExceptionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/config/AllExceptionConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/DataExceptionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/config/DataExceptionConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/dao/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/dao/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/dao/vo/NewUserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/dao/vo/NewUserVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/feignClient/LoginServiceFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/feignClient/LoginServiceFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/java/com/ldw/loginservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application-dev-loginser.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/resources/application-dev-loginser.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/login-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/test/java/com/ldw/loginservice/LoginServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/dao/vo/NewUserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/dao/vo/NewUserVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/Impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/loginservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="release" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -103,19 +82,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AuthServiceApplication.executor": "Run",
-    "Application.LoginServiceApplication.executor": "Run",
-    "Maven.auth-service [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "mysql-explain.enableMySQLExplain": "true",
-    "mysql-explain.existMysqlJar": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LoginServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auth-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;devolop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;mysql-explain.enableMySQLExplain&quot;: &quot;true&quot;,
+    &quot;mysql-explain.existMysqlJar&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="main" />
@@ -323,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753016420646</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="优化项目结构">
+      <option name="closed" value="true" />
+      <created>1753153225539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753153225539</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +327,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/release" />
                       </list>
                     </value>
                   </entry>
@@ -359,7 +346,8 @@
     <MESSAGE value="项目，添加了lang3 版本3.12.0和hutool 版本5.8.38" />
     <MESSAGE value="注册功能实现级别流程" />
     <MESSAGE value="注册功能实现基本流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册功能实现基本流程" />
+    <MESSAGE value="优化项目结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化项目结构" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
