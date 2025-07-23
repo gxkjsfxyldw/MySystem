@@ -33,10 +33,10 @@ spring:
     nacos:
       discovery:
         # Nacos服务地址，用于服务注册与发现
-        server-addr: localhost:8848
+        server-addr: 127.0.0.1:8848
         #配置中心
       config:
-        server-addr: localhost:8848
+        server-addr: 127.0.0.1:8848
         #配置的格式 yml
         file-extension: yml
         # 从Nacos配置中心导入配置文件
