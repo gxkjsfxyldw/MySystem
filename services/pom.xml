@@ -16,20 +16,26 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
-        <!-- 更新 Spring Cloud 版本为 Hoxton.SR12 以兼容 Spring Boot 2.3.x -->
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-        <!-- 更新 Spring Cloud Alibaba 版本为 2.2.9.RELEASE 以兼容 Spring Cloud Hoxton -->
-        <spring-cloud-alibaba.version>2.2.9.RELEASE</spring-cloud-alibaba.version>
+        <spring-boot.version>2.6.11</spring-boot.version>
+        <spring-cloud.version>2021.0.4</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
         <mysql.version>8.0.30</mysql.version>
         <lombok.version>1.18.30</lombok.version>
         <mybatis-plus.version>3.4.2</mybatis-plus.version>
         <mybatis-plus-extension.version>3.4.2</mybatis-plus-extension.version>
         <swagger.version>2.9.2</swagger.version>
-        <log4j2.version>2.7.9</log4j2.version>
         <hutool.version>5.8.38</hutool.version>
         <lang3.version>3.12.0</lang3.version>
+        <jwt.version>0.9.0</jwt.version>
+        <commons-codec.version>1.15</commons-codec.version>
     </properties>
+
+    <!-- 定义项目继承关系，使用 Spring Boot 的父工程配置 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.11</version>
+    </parent>
 
     <!-- 打包方式保持不变 -->
     <packaging>pom</packaging>
@@ -52,12 +58,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>${spring-boot.version}</version>
-<!--            <exclusions>-->
-<!--                <exclusion>-->
-<!--                    <groupId>org.springframework.boot</groupId>-->
-<!--                    <artifactId>spring-boot-starter-logging</artifactId>-->
-<!--                </exclusion>-->
-<!--            </exclusions>-->
         </dependency>
 <!--        &lt;!&ndash;            log4j2&ndash;&gt;-->
 <!--        <dependency>-->
@@ -65,11 +65,6 @@
 <!--            <artifactId>spring-boot-starter-log4j2</artifactId>-->
 <!--            <version>2.7.3</version>-->
 <!--        </dependency>-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-dependencies</artifactId>
-            <version>${spring-boot.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -86,27 +81,35 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- Spring Cloud Hoxton.SR12 (兼容 Java 8) -->
+        <!-- Spring Cloud 依赖-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
-<!--        spring-cloud-alibaba-->
+<!--        spring-cloud-alibaba 依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-dependencies</artifactId>
             <version>${spring-cloud-alibaba.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>${spring-cloud-alibaba.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
             <version>${spring-cloud-alibaba.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
         <!-- MySQL 驱动依赖管理 -->
         <dependency>
@@ -132,12 +135,6 @@
             <version>${mybatis-plus.version}</version>
             <scope>compile</scope>
         </dependency>
-<!--        &lt;!&ndash;mybatis-plus 代码生成器依赖&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.baomidou</groupId>-->
-<!--            <artifactId>mybatis-plus-generator</artifactId>-->
-<!--            <version>${mybatis-plus.version}</version>-->
-<!--        </dependency>-->
         <!-- Lombok 依赖管理 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -155,15 +152,29 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
+        <!--        -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
         </dependency>
+        <!--   工具类，提供字符串工具方法使用 StringUtils   -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${lang3.version}</version>
+        </dependency>
+        <!--工具类，JWT 依赖，提供生成token-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jwt.version}</version>
+        </dependency>
+        <!-- 工具类，提供密码加密 md5Hex-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec.version}</version>
         </dependency>
     </dependencies>
 
