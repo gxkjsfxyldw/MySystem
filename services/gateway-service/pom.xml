@@ -8,12 +8,12 @@
     <name>gateway-service</name>
     <description>gateway-service</description>
 
-    <!-- 继承父POM的依赖管理 -->
-    <parent>
-        <groupId>services</groupId>
-        <artifactId>services</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+<!--    &lt;!&ndash; 继承父POM的依赖管理 &ndash;&gt;-->
+<!--    <parent>-->
+<!--        <groupId>services</groupId>-->
+<!--        <artifactId>services</artifactId>-->
+<!--        <version>0.0.1-SNAPSHOT</version>-->
+<!--    </parent>-->
 
     <properties>
         <!-- 与父POM保持一致 -->
@@ -23,39 +23,39 @@
     </properties>
 
 
-    <build>
-        <plugins>
-            <!-- Maven 编译插件（JDK 1.8 兼容） -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            &lt;!&ndash; Maven 编译插件（JDK 1.8 兼容） &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.8.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>${java.version}</source>-->
+<!--                    <target>${java.version}</target>-->
+<!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
 
-            <!-- Spring Boot Maven 插件 -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.ldw.loginservice.LoginServiceApplication</mainClass>
-                    <!-- 如果不需要打包可执行JAR，可保留 skip -->
-                    <skip>true</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>repackage</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<!--            &lt;!&ndash; Spring Boot Maven 插件 &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <mainClass>com.ldw.loginservice.LoginServiceApplication</mainClass>-->
+<!--                    &lt;!&ndash; 如果不需要打包可执行JAR，可保留 skip &ndash;&gt;-->
+<!--                    <skip>true</skip>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>repackage</id>-->
+<!--                        <goals>-->
+<!--                            <goal>repackage</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>
