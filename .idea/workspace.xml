@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ec1d0c3-dea2-4be9-b973-645d3313b08b" name="Changes" comment="优化项目结构">
-      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestCommonStatePersistent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestCookiePersistent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CommonStatePersistent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestHistoryPersistent.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/CommonModuleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/CommonModuleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/constant/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/constant/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/common-module/src/main/java/com/common/module/utils/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/ldw/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/resources/application-dev-loginser.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/resources/application-dev-loginser.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +40,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;gxkjsfxyldw&quot;
-  }
-}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -57,56 +48,37 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/gxkjsfxyldw/MySystem.git&quot;,
-    &quot;accountId&quot;: &quot;08bae483-2321-47a3-9697-5540fc68f022&quot;
-  }
-}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="customMavenHome" value="D:\Maven\apache-maven-3.9.10" />
-        <option name="localRepository" value="D:\Maven\apache-maven-3.9.10\repository" />
-        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="localRepository" value="D:\maven\apache-maven-3.6.3\repository" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
         <option name="showDialogWithAdvancedSettings" value="true" />
-        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.9.10\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
   <component name="ProjectId" id="2wfNbLGYMdzIyy0rriM8CO2PeKx" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="flattenModules" value="true" />
     <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AuthServiceApplication.executor": "Run",
-    "Application.LoginServiceApplication.executor": "Run",
-    "Maven.auth-service [clean].executor": "Run",
-    "Maven.auth-service [package].executor": "Run",
-    "Maven.services [clean].executor": "Run",
-    "Maven.services [compile].executor": "Run",
-    "Maven.services [install].executor": "Run",
-    "Maven.services [package].executor": "Run",
-    "Maven.services [test].executor": "Run",
-    "Maven.services [validate].executor": "Run",
-    "Maven.services [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "mysql-explain.enableMySQLExplain": "true",
-    "mysql-explain.existMysqlJar": "true",
-    "settings.editor.selected.configurable": "MavenSettings"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="mysql-explain.agentPath" value="C:\Users\26327\AppData\Roaming\JetBrains\IntelliJIdea2021.2\plugins\mysql-explain-intellij-plugin\lib\mysql-explain-agent-1.1.1-with-dependencies.jar" />
+    <property name="mysql-explain.existMysqlJar" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="main" />
@@ -278,6 +250,7 @@
       <workItem from="1751985922269" duration="820000" />
       <workItem from="1752941017934" duration="7886000" />
       <workItem from="1752989084659" duration="20928000" />
+      <workItem from="1753271608407" duration="4657000" />
     </task>
     <task id="LOCAL-00001" summary="革命性改造，login-service服务能启动了QAQ">
       <created>1751898537534</created>
@@ -339,7 +312,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="release" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -350,6 +323,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="革命性改造，login-service服务能启动了QAQ" />

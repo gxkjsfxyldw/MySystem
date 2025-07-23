@@ -89,6 +89,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--微服务基础能力的抽象，具体实现由其他 Starter完成(好像不用它也可以)-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-commons</artifactId>
+                <version>2.2.6.RELEASE</version>
+            </dependency>
 <!--        spring-cloud-alibaba 依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -97,13 +103,15 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
+        <!--服务注册与发现中心 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>${spring-cloud-alibaba.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
+<!--            <type>pom</type>-->
+<!--            <scope>import</scope>-->
         </dependency>
+        <!--集成 Nacos 作为分布式配置中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
